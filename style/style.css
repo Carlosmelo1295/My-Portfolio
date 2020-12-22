@@ -54,15 +54,34 @@ h2 {
     margin-bottom: 20px;
 }
 
-.sobre {
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="1"] {
+    transform: translate(-100px);
+}
+
+[data-anime="2"] {
+    transform: translate(-100px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate(0px);
+}
+
+#element {
     height: 100vh;
     padding: 17px;
-    background-image: url("../image/undraw_profile_6l1l.svg");
-    background-repeat: no-repeat;
     background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.sobre {
+    background-image: url("../image/undraw_profile_6l1l.svg");
     background-position: right;
-    transform: translate(-300px);
-    opacity: 0;
 
 }
 
@@ -71,11 +90,7 @@ h2 {
 }
 
 .projetos {
-    height: 100vh;
-    padding: 17px;
     background-image: url("../image/undraw_code_typing_7jnv.svg");
-    background-repeat: no-repeat;
-    background-size: 50%;
     background-position: left;
 }
 
