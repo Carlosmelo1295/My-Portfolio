@@ -87,101 +87,81 @@ const repoOrkut = document
 		);
 	});
 
-function percentageSkill(fistSkill, secondSkill, thirdSkill, fourthSkill) {
+const getAllSkills = document.querySelectorAll(".skillDentro");
 
-	fistSkill = (percentage, width) => {
-		const skill1 = document.querySelector(".skil1-dentro");
-		const newElement = document.createElement("i");
-		skill1.insertAdjacentElement("beforeend", newElement);
-		let interval1 = setInterval(() => {
-			if (width > 95) {
-				clearInterval(interval1);
-			} else {
-				width++;
-				skill1.style.width = `${width}%`;
-				newElement.textContent = `${percentage++}%⚡️`;
-			}
-		}, 30);
-	};
-	fistSkill(0, 0)
+getAllSkills.forEach(function (elementos) {
+	const newElement = document.createElement("i");
+	elementos.insertAdjacentElement("beforeend", newElement);
+});
 
-	//👽
+const htmlSkill = (width = 0, percentage = 0) => {
+	let interval1 = setInterval(() => {
+		if (width > 95) {
+			clearInterval(interval1);
+		} else {
+			width++;
+			getAllSkills[0].style.width = `${width}%`;
+			getAllSkills[0].textContent = `${percentage++}%⚡️`;
+		}
+	}, 30);
+};
 
-	secondSkill = (percentage, width) => {
-		const skill2 = document.querySelector(".skil2-dentro");
-		const newElement = document.createElement("i");
-		skill2.insertAdjacentElement("beforeend", newElement);
+const cssSkill = (width = 0, percentage = 0) => {
+	let interval2 = setInterval(() => {
+		if (width > 97) {
+			clearInterval(interval2);
+		} else {
+			width++;
+			getAllSkills[1].style.width = `${width}%`;
+			getAllSkills[1].textContent = `${percentage++}%⚡️`;
+		}
+	}, 30);
+};
+const jsSkill = (width = 0, percentage = 0) => {
+	let interval3 = setInterval(() => {
+		if (width > 40) {
+			clearInterval(interval3);
+		} else {
+			width++;
+			getAllSkills[2].style.width = `${width}%`;
+			getAllSkills[2].textContent = `${percentage++}%⚡️`;
+		}
+	}, 40);
+};
 
-		let interval2 = setInterval(() => {
-			if (width > 97) {
-				clearInterval(interval2);
-			} else {
-				width++;
-				skill2.style.width = `${width}%`;
-				newElement.textContent = `${percentage++}%⚡️`;
-			}
-		}, 30);
-	};
-	secondSkill(0, 0)
+const psSkill = (width = 0, percentage = 0) => {
+	let interval4 = setInterval(() => {
+		if (width > 99) {
+			clearInterval(interval4);
+		} else {
+			width++;
+			getAllSkills[3].style.width = `${width}%`;
+			getAllSkills[3].textContent = `${percentage++}%⚡️`;
+		}
+	}, 30);
+};
+htmlSkill();
+cssSkill();
+jsSkill();
+psSkill();
 
-	//👽
-
-	thirdSkill = (percentage, width) => {
-		const skill3 = document.querySelector(".skil3-dentro");
-		const newElement = document.createElement("i");
-		skill3.insertAdjacentElement("beforeend", newElement);
-
-		let interval3 = setInterval(() => {
-			if (width > 40) {
-				clearInterval(interval3);
-			} else {
-				width++;
-				skill3.style.width = `${width}%`;
-				newElement.textContent = `${percentage++}%⚡️`;
-			}
-		}, 40);
-	};
-	thirdSkill(0, 0)
-
-	//👽
-
-	fourthSkill = (percentage, width) => {
-		const skill4 = document.querySelector(".skil4-dentro");
-		const newElement = document.createElement("i");
-		skill4.insertAdjacentElement("beforeend", newElement);
-
-		let interval4 = setInterval(() => {
-			if (width > 92) {
-				clearInterval(interval4);
-			} else {
-				width++;
-				skill4.style.width = `${width}%`;
-				newElement.textContent = `${percentage++}%⚡️`;
-			}
-		}, 40);
-	};
-	fourthSkill(0, 0)
-
-}
-percentageSkill()
-
-let slide = document.querySelector(".slideInside")
+let slide = document.querySelector(".slideInside");
+let boxSlide = document.querySelector(".slideBox")
 
 function deslizarDireita() {
-	if (slide.style.float == "left") {
-		slide.style.float = "right"
-		document.body.style.backgroundColor = '#1B2431'
-		document.body.style.color = "#F2ECFF"		
-
+	if (slide.style.float != "right") {
+		slide.style.float = "right";
+		document.body.style.backgroundColor = "#1B2431";
+		boxSlide.style.backgroundColor = "#F2ECFF";
+		document.body.style.color = "#F2ECFF";
+		slide.style.backgroundColor = "#1B2431"
 	} else {
-		slide.style.float = "left"
-		document.body.style.backgroundColor = '#F2ECFF'
-		document.body.style.color = "#0C0C0C"
+		slide.style.float = "left";
+		document.body.style.backgroundColor = "#F2ECFF";
+		boxSlide.style.backgroundColor = "#1B2431";
+		document.body.style.color = "#0C0C0C";
+		slide.style.backgroundColor = " #8685EF"
 	}
-
-
 }
 
-
-
-slide.addEventListener("click", deslizarDireita)
+slide.addEventListener("click", deslizarDireita);

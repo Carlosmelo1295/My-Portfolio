@@ -12,12 +12,7 @@
 	<header>
 		<span>
 			< Carlos Eduardo /> </span>
-		<ul>
-			<li><a href="#">Inicio</a></li>
-			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Projetos</a></li>
-			<li><a href="#">Contato</a></li>
-		</ul>
+		<span id="emojiBoy">&#128102;&#127997;</span>
 	</header>
 	<div class="slideBox">
 		<div class="slideInside">
@@ -29,7 +24,8 @@
 		<h2>Sobre</h2>
 		<h1>Seja bem-vindo ao meu portfólio!</h1>
 		<p>
-			Opa👋, Eu me chamo Carlos Eduardo, tenho 25 anos, sou natural do Rio de
+			Opa<span id="emojiHand">&#128075;&#127996;</span>, Eu me chamo Carlos Eduardo, tenho 25 anos, sou natural do
+			Rio de
 			Janeiro e adoro fazer umas graças com códigos❤️
 		</p>
 
@@ -69,10 +65,7 @@
 		<div>
 			<h3>Tomatão</h3>
 			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta unde
-				sequi fugit laboriosam, quibusdam, quis sunt adipisci asperiores sed
-				blanditiis eius ab cumque magnam rerum a voluptatibus! Aliquid, eos
-				assumenda.
+				O tomatão é um projeto simples de um pomodoro para auxiliar na hora dos estudos.
 			</p>
 
 			<svg xmlns="http://www.w3.org/2000/svg" id="git-tomatao" width="35" height="35" viewBox="0 0 24 24"
@@ -85,7 +78,8 @@
 
 		<div>
 			<h3>Lista de tarefas</h3>
-
+			<p>Irmã do tomatão, a lista de tarefas foi criada com o mesmo intuito, de auxiliar na hora dos estudos
+				possibilitando o usuário criar e excluir tarefas com simples cliques.</p>
 			<svg xmlns="http://www.w3.org/2000/svg" id="git-tarefas" width="35" height="35" viewBox="0 0 24 24"
 				stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
 				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -96,6 +90,7 @@
 
 		<div>
 			<h3>Página inicial do Orkut</h3>
+			<p>Cópia da página de login do nosso velho e querido Orkut.</p>
 
 			<svg xmlns="http://www.w3.org/2000/svg" id="git-orkut" width="35" height="35" viewBox="0 0 24 24"
 				stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -106,32 +101,36 @@
 		</div>
 	</article>
 
-	<footer class="contatos">
+	<footer class="contatos" id="contatos">
 		<h2>Contato</h2>
-		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44"
-			viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-			stroke-linejoin="round">
-			<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-			<path
-				d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-		</svg>
-
-		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
-			height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-			stroke-linejoin="round">
-			<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-			<rect x="4" y="4" width="16" height="16" rx="4" />
-			<circle cx="12" cy="12" r="3" />
-			<line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-		</svg>
-
-		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44"
-			viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-			stroke-linejoin="round">
-			<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-			<rect x="3" y="5" width="18" height="14" rx="2" />
-			<polyline points="3 7 12 13 21 7" />
-		</svg>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44"
+				height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+				stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<path
+					d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+			</svg>
+		</div>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+				height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+				stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<rect x="4" y="4" width="16" height="16" rx="4" />
+				<circle cx="12" cy="12" r="3" />
+				<line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+			</svg>
+		</div>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44"
+				viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+				stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<rect x="3" y="5" width="18" height="14" rx="2" />
+				<polyline points="3 7 12 13 21 7" />
+			</svg>
+		</div>
 	</footer>
 
 	<script src="js/main.js"></script>
