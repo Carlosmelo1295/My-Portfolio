@@ -10,7 +10,7 @@
     --background-color: #F2ECFF;
     --txt-color-white: #8685EF;
     --txt-color-dark: #0C0C0C;
-
+    --strongColor: #ED1015;
     --background-cards: #6D5ACF;
     --text-cards: #FFFD01;
 }
@@ -64,7 +64,8 @@ h2 {
 }
 
 h3 {
-    text-decoration: overline;
+   text-transform: capitalize;
+   text-shadow: 0 3px 3px black;
 }
 
 .slideBox {
@@ -136,12 +137,11 @@ h3 {
 }
 
 .sobre {
-    background-image: url("../image/undraw_profile_6l1l.svg");
+    background-image: url("../image/rocket_boy_outline\ \(1\).svg");
     background-position: right;
     line-height: 1.6em;
     height: 100vh;
     width: 100%;
-
 }
 
 .sobre p {
@@ -151,12 +151,11 @@ h3 {
 }
 
 .projetos {
-    background-image: url("../image/undraw_code_typing_7jnv.svg");
+    background-image: url("../image/web_developer_outline\ \(1\).svg");
     background-position: left;
     width: 100%;
     height: 100vh;
-
-
+    overflow: scroll;
 }
 
 .projetos div {
@@ -166,23 +165,24 @@ h3 {
     border-radius: 10px;
     padding: 1em;
     box-shadow: 0 5px 15px var(--txt-color-dark);
-    cursor: pointer;
     float: right;
     width: 50%;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
     text-align: center;
+    transition: 200ms linear;
+
 }
 
 .projetos div p {
     text-align: justify;
+    
 }
 
-.projetos div:hover {
-    transform: scale(0.98);
-    transition: linear 200ms;
-    box-shadow: none;
+.projetos svg:hover {
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 .skill {

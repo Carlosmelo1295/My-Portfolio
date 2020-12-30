@@ -148,7 +148,7 @@ psSkill();
 let slide = document.querySelector(".slideInside");
 let boxSlide = document.querySelector(".slideBox")
 
-function deslizarDireita() {
+function darkMode() {
 	if (slide.style.float != "right") {
 		slide.style.float = "right";
 		document.body.style.backgroundColor = "#1B2431";
@@ -164,4 +164,4 @@ function deslizarDireita() {
 	}
 }
 
-slide.addEventListener("click", deslizarDireita);
+slide.addEventListener("click", darkMode);
