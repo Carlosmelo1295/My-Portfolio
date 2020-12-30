@@ -1,23 +1,21 @@
          
-<h1> Meu portifolio📖 </h1>
+<h1> Meu portfólio📖 </h1>
 
 <p> Portifolio criado para divulgar projetos e escrever um pouco sobre minha pessoa. 😆</p>
 
-<ol>
-<li> 
-<strong> Sobre 🧍</strong> 
- <br>
+
+ *Sobre 🧍
+ 
 Nesse primeiro (article) você escontra um pouco sobre mim .
-</li>
 
-<li>
-<strong> Projetos 🚧</strong>
- <br>
+
+
+ *Projetos 🚧</strong>
+ 
 Neste segundo (article) Estão todos os projetos desenvolvidos e também planos para futuros projetos.
-</li>
 
-<li> 
- <strong> Contatos📇</strong>
- <br>
+
+  *Contatos📇
+ 
 E por fim estão os contatos
-</h1>
+
