@@ -4,18 +4,18 @@
 <p> Portifolio criado para divulgar projetos e escrever um pouco sobre minha pessoa. 😆</p>
 
 
- *Sobre 🧍
+ 1.Sobre 🧍
  
 Nesse primeiro (article) você escontra um pouco sobre mim .
 
 
 
- *Projetos 🚧</strong>
+ 1.Projetos 🚧</strong>
  
 Neste segundo (article) Estão todos os projetos desenvolvidos e também planos para futuros projetos.
 
 
-  *Contatos📇
+  1.Contatos📇
  
 E por fim estão os contatos
 
