@@ -1,7 +1,7 @@
          
 <h1> Meu portfólio📖 </h1>
 
-<p> Portifolio criado para divulgar projetos e escrever um pouco sobre minha pessoa. 😆</p>
+<p> Portfólio criado para divulgar projetos e escrever um pouco sobre minha pessoa. 😆</p>
 
 <ol>
 <li>Sobre 🧍
