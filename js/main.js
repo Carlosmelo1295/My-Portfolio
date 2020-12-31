@@ -1,15 +1,15 @@
 "use strict";
 
 function debounce(func, wait, immediate) {
-	var timeout;
+	let timeout;
 	return function () {
-		var context = this,
+		let context = this,
 			args = arguments;
-		var later = function () {
+		let later = function () {
 			timeout = null;
 			if (!immediate) func.apply(context, args);
 		};
-		var callNow = immediate && !timeout;
+		let callNow = immediate && !timeout;
 		clearTimeout(timeout);
 		timeout = setTimeout(later, wait);
 		if (callNow) func.apply(context, args);
@@ -152,15 +152,15 @@ function darkMode() {
 	if (slide.style.float != "right") {
 		slide.style.float = "right";
 		document.body.style.backgroundColor = "#1B2431";
-		boxSlide.style.backgroundColor = "#F2ECFF";
-		document.body.style.color = "#F2ECFF";
+		boxSlide.style.backgroundColor = "#D8DCD6";
+		document.body.style.color = "#D8DCD6";
 		slide.style.backgroundColor = "#1B2431"
 	} else {
 		slide.style.float = "left";
-		document.body.style.backgroundColor = "#F2ECFF";
+		document.body.style.backgroundColor = "#D8DCD6";
 		boxSlide.style.backgroundColor = "#1B2431";
 		document.body.style.color = "#0C0C0C";
-		slide.style.backgroundColor = " #8685EF"
+		slide.style.backgroundColor = "#F2ECFF"
 	}
 }
 
