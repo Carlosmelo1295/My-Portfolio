@@ -3,8 +3,9 @@
 
 <p> Portfólio criado para divulgar projetos e escrever um pouco sobre minha pessoa. 😆</p>
 
-![GitHub Logo](/image/rocket_boy_outline%20(1).svg)
+<p align="left">
+     Página Composta por 1 Header📝, 2 Sections🔖 (A primeira voltada para introdução e apresentação de skills. A segunda voltada para divulgação de projetos), e por fim o            footer👣 com os contatos.
+</p>
 
 
-*Página Composta por **1 Header**, **2 Sections** (a primeira voltada para introdução e apresentação de skills, a segunda voltada para divulgação de projetos), e por fim o **footer** com os contatos.
 
