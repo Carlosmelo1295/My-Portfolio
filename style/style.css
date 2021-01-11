@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Space Mono",monospace;
+    font-family: "Space Mono", monospace;
 }
 
 :root {
@@ -15,11 +15,18 @@
     --text-cards: #FFFD01;
 }
 
+a {
+    color: var(--text-cards);
+    background-color: var(--txt-color-dark);
+    border-radius: 3px;
+    padding: 2px;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--txt-color-dark);
     letter-spacing: 1px;
-    
+
 }
 
 header {
@@ -130,7 +137,6 @@ h3 {
 }
 
 #element {
-    height: 100vh;
     padding: 17px;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -144,12 +150,12 @@ h3 {
     background-image: url("../image/rocket_boy_outline\ \(1\).svg");
     background-position: right;
     line-height: 1.6em;
-    height: 100vh;
     width: 100%;
 }
 
 .sobre p {
     margin-right: 50%;
+    font-size: 13pt;
 
 }
 
@@ -218,7 +224,6 @@ footer {
     text-align: center;
     background-color: var(--text-cards);
     color: var(--txt-color-dark);
-
 }
 
 footer div {
@@ -243,6 +248,10 @@ footer div:hover {
     body {
         text-align: center;
         font-size: 90%;
+    }
+
+    .sobre {
+        background-image: none;
     }
 
     .sobre p {
