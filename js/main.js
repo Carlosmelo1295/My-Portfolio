@@ -87,6 +87,16 @@ const repoOrkut = document
 		);
 	});
 
+const booklist = document
+	.querySelector("#git-marcador")
+	.addEventListener("click", () => {
+		window.open(
+			"  https://github.com/Tklao/bookmarker",
+			"",
+			"width=500,height=300"
+		);
+	});
+
 const getAllSkills = document.querySelectorAll(".skillDentro");
 
 getAllSkills.forEach(function (elementos) {

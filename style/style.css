@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Space Mono", monospace;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -66,6 +66,7 @@ h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: normal;
+
 }
 
 h2 {
@@ -156,7 +157,7 @@ h3 {
 .sobre p {
     margin-right: 50%;
     font-size: 13pt;
-    text-align: left;
+    text-align: justify;
 
 }
 
@@ -271,8 +272,9 @@ footer div:hover {
     }
 
     .projetos {
-        overflow-y: visible;
+        overflow-y: auto;
         display: block;
+
     }
 
     .projetos div {
@@ -283,4 +285,5 @@ footer div:hover {
     footer div {
         padding: 5px;
     }
+
 }
