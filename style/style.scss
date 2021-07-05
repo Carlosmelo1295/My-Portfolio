@@ -1,0 +1,275 @@
+$primary-background: #D8DCD6;
+$secondary-background:#262a3e;
+$txt-color-white: #8a8acb;
+$txt-color-dark: #0C0C0C;
+
+
+@import "reset";
+
+
+body {
+    a {
+        color: $txt-color-white;
+        background-color: $secondary-background;
+        border-radius: 3px;
+        padding: 2px;
+    }
+
+    background-color: $primary-background;
+    color: $txt-color-dark;
+    letter-spacing: 1px;
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: $secondary-background;
+        color: $txt-color-white;
+
+        span {
+            font-family: cursive;
+            font-size: 18pt;
+            font-weight: 400;
+            cursor: pointer;
+
+        }
+
+        #emojiBoy {
+            font-size: 25pt;
+            animation: anime infinite linear 2s;
+        }
+
+
+    }
+
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: normal;
+
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+
+    h3 {
+        text-transform: capitalize;
+        color: #fab1a0;
+    }
+
+    .slideBox {
+        width: 70px;
+        border-radius: 50px;
+        background-color: $secondary-background;
+        height: 30px;
+        margin: 10px 7px;
+    }
+
+    .slideInside {
+        width: 30px;
+        border-radius: 50px;
+        background-color: whitesmoke;
+        height: 30px;
+        padding: 4px;
+        cursor: pointer;
+
+        &::after {
+            content: " 🌗";
+        }
+    }
+
+
+    .container-skills {
+        margin-top: 2em;
+
+        &::before {
+            content: 'Desenvolvedor Front-end Júnior👨‍💻';
+            color: $txt-color-white;
+            background-color: $secondary-background;
+            display: block;
+            width: max-content;
+        }
+    }
+
+
+    [data-anime] {
+        opacity: 0;
+        transition: 1s;
+    }
+
+    [data-anime="1"] {
+        transform: translate(-100px);
+    }
+
+    [data-anime="2"] {
+        transform: translate(-100px);
+    }
+
+    [data-anime="3"] {
+        transform: translateX(-200px)
+    }
+
+    [data-anime].animate {
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+    #element {
+        padding: 17px;
+        background-size: 50%;
+        background-repeat: no-repeat;
+
+    }
+
+    #emojiHand {
+        font-size: 21pt;
+    }
+
+    .sobre {
+        background-image: url("../image/rocket_boy_outline\ \(1\).svg");
+        background-position: right;
+        line-height: 1.6em;
+        width: 100%;
+    }
+
+    .sobre p {
+        margin-right: 50%;
+        font-size: 13pt;
+        text-align: justify;
+
+    }
+
+    .projetos {
+        background-image: url("../image/web_developer_outline\ \(1\).svg");
+        background-position: left;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+
+        div {
+            background-color: $secondary-background;
+            color: $txt-color-white;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 1em;
+            float: right;
+            width: 50%;
+            text-align: center;
+            transition: 200ms linear;
+            line-height: 1.5em;
+
+            p {
+                text-align: justify;
+                margin-top: 5px;
+                color: $txt-color-white;
+
+            }
+
+            svg {
+                margin-top: 10px;
+                transition: 200ms ease-in-out;
+
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+
+    .skill {
+        height: 30px;
+        width: 50%;
+        border-radius: 10px;
+        background-color: $secondary-background;
+
+        .skillDentro {
+            height: 30px;
+            border-radius: 10px;
+            background-color: #59656D;
+            text-align: right;
+
+        }
+    }
+
+
+    footer {
+        margin-top: 10px;
+        text-align: center;
+        background-color: $secondary-background;
+        color: $txt-color-white;
+
+        div {
+            margin: 5px 10px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 200ms linear;
+
+            &:hover {
+                opacity: 0.5;
+
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        text-align: center;
+        font-size: 90%;
+
+
+        .sobre {
+            background-image: none;
+
+            p {
+                margin-right: 0%;
+                text-indent: 10px;
+                text-align: left;
+
+            }
+        }
+
+        .skill {
+            height: 30px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: $txt-color-white;
+
+        }
+
+        .projetos {
+            overflow-y: auto;
+            display: block;
+
+            div {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+
+        footer div {
+            padding: 5px;
+        }
+    }
+
+}
