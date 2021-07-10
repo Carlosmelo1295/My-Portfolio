@@ -158,19 +158,22 @@ psSkill();
 let slide = document.querySelector(".slideInside");
 let boxSlide = document.querySelector(".slideBox")
 
+let audio = new Audio("../sounds/button.mp3")
+
 function darkMode() {
 	if (slide.style.float != "right") {
 		slide.style.float = "right";
 		document.body.style.backgroundColor = "#1B2431";
-		boxSlide.style.backgroundColor = "#D8DCD6";
+		boxSlide.style.backgroundColor = "#1B2431";
 		document.body.style.color = "#D8DCD6";
-		slide.style.backgroundColor = "#1B2431"
+		audio.play();
+
 	} else {
 		slide.style.float = "left";
 		document.body.style.backgroundColor = "#D8DCD6";
-		boxSlide.style.backgroundColor = "#1B2431";
+		boxSlide.style.backgroundColor = "#D8DCD6";
 		document.body.style.color = "#0C0C0C";
-		slide.style.backgroundColor = "#F2ECFF"
+		audio.play();
 	}
 }
 
